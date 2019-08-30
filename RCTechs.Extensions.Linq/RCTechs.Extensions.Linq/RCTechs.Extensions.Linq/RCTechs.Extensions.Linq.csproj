@@ -3,14 +3,15 @@
   <PropertyGroup>
     <TargetFrameworks>netstandard2.0;net45</TargetFrameworks>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>0.0.4</Version>
+    <Version>0.0.5</Version>
     <Authors>RCTycooner</Authors>
     <Company>RCTechs</Company>
     <Description>Contains extensions on LINQ</Description>
     <PackageTags>LINQ</PackageTags>
     <PackageProjectUrl>https://github.com/RCTycooner/RCTechs.Extensions.Linq</PackageProjectUrl>
     <RepositoryUrl></RepositoryUrl>
-    <PackageReleaseNotes>Added target for .NET Framework 4.5</PackageReleaseNotes>
+    <PackageReleaseNotes>Added Max/MinOrDefault variants without a selector.
+Added unit tests.</PackageReleaseNotes>
   </PropertyGroup>
 
 </Project>

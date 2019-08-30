@@ -22,6 +22,19 @@ namespace RCTechs.Extensions.Linq
                 .Max();
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <typeparam name="TSource"></typeparam>
+        /// <param name="source"></param>
+        /// <returns></returns>
+        public static TSource MaxOrDefault<TSource>(this IEnumerable<TSource> source)
+        {
+            return source
+                .DefaultIfEmpty()
+                .Max();
+        }
+
 
         /// <summary>
         /// 
@@ -35,6 +48,19 @@ namespace RCTechs.Extensions.Linq
         {
             return source
                 .Select(x => selector(x))
+                .DefaultIfEmpty()
+                .Min();
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <typeparam name="TSource"></typeparam>
+        /// <param name="source"></param>
+        /// <returns></returns>
+        public static TSource MinOrDefault<TSource>(this IEnumerable<TSource> source)
+        {
+            return source
                 .DefaultIfEmpty()
                 .Min();
         }
