@@ -1,0 +1,7 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/RCTechs.Extensions.Linq/RCTechs.Extensions.Linq/.vs/RCTechs.Extensions.Linq/v16
+/RCTechs.Extensions.Linq/RCTechs.Extensions.Linq/RCTechs.Extensions.Linq/bin/Debug
+/RCTechs.Extensions.Linq/RCTechs.Extensions.Linq/RCTechs.Extensions.Linq/obj

@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>0.0.1</Version>
+    <Authors>RCTycooner</Authors>
+    <Company>RCTechs</Company>
+    <Description>Contains extensions on LINQ</Description>
+    <PackageTags>LINQ</PackageTags>
+    <PackageProjectUrl>https://github.com/RCTycooner/RCTechs.Extensions.Linq</PackageProjectUrl>
+    <RepositoryUrl></RepositoryUrl>
+    <PackageReleaseNotes>Initial release</PackageReleaseNotes>
+  </PropertyGroup>
+
+</Project>
