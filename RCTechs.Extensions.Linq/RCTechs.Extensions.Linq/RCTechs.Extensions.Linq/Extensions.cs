@@ -64,5 +64,68 @@ namespace RCTechs.Extensions.Linq
                 .DefaultIfEmpty()
                 .Min();
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="source"></param>
+        /// <param name="action"></param>
+        public static void ForEach<T>(this IEnumerable<T> source, Action<T> action)
+        {
+            if (source != null)
+                foreach (var item in source)
+                    action(item);
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <typeparam name="TIdentity"></typeparam>
+        /// <param name="source"></param>
+        /// <param name="identitySelector"></param>
+        /// <returns></returns>
+        public static IEnumerable<T> DistinctBy<T, TIdentity>(this IEnumerable<T> source, Func<T, TIdentity> identitySelector)
+        {
+            return source.Distinct(By(identitySelector));
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <typeparam name="TSource"></typeparam>
+        /// <typeparam name="TIdentity"></typeparam>
+        /// <param name="identitySelector"></param>
+        /// <returns></returns>
+        public static IEqualityComparer<TSource> By<TSource, TIdentity>(Func<TSource, TIdentity> identitySelector)
+        {
+            return new DelegateComparer<TSource, TIdentity>(identitySelector);
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <typeparam name="TIdentity"></typeparam>
+        private class DelegateComparer<T, TIdentity> : IEqualityComparer<T>
+        {
+            private readonly Func<T, TIdentity> identitySelector;
+
+            public DelegateComparer(Func<T, TIdentity> identitySelector)
+            {
+                this.identitySelector = identitySelector;
+            }
+
+            public bool Equals(T x, T y)
+            {
+                return Equals(identitySelector(x), identitySelector(y));
+            }
+
+            public int GetHashCode(T obj)
+            {
+                return identitySelector(obj).GetHashCode();
+            }
+        }
     }
 }

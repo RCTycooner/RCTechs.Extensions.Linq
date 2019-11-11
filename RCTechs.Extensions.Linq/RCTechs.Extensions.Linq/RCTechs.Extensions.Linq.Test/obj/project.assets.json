@@ -20,7 +20,7 @@
           "lib/net45/Microsoft.VisualStudio.TestPlatform.TestFramework.dll": {}
         }
       },
-      "RCTechs.Extensions.Linq/0.0.5": {
+      "RCTechs.Extensions.Linq/0.0.6": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.5",
         "compile": {
@@ -50,7 +50,7 @@
           "lib/net45/Microsoft.VisualStudio.TestPlatform.TestFramework.dll": {}
         }
       },
-      "RCTechs.Extensions.Linq/0.0.5": {
+      "RCTechs.Extensions.Linq/0.0.6": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.5",
         "compile": {
@@ -80,7 +80,7 @@
           "lib/net45/Microsoft.VisualStudio.TestPlatform.TestFramework.dll": {}
         }
       },
-      "RCTechs.Extensions.Linq/0.0.5": {
+      "RCTechs.Extensions.Linq/0.0.6": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.5",
         "compile": {
@@ -110,7 +110,7 @@
           "lib/net45/Microsoft.VisualStudio.TestPlatform.TestFramework.dll": {}
         }
       },
-      "RCTechs.Extensions.Linq/0.0.5": {
+      "RCTechs.Extensions.Linq/0.0.6": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.5",
         "compile": {
@@ -285,7 +285,7 @@
         "mstest.testframework.nuspec"
       ]
     },
-    "RCTechs.Extensions.Linq/0.0.5": {
+    "RCTechs.Extensions.Linq/0.0.6": {
       "type": "project",
       "path": "../RCTechs.Extensions.Linq/RCTechs.Extensions.Linq.csproj",
       "msbuildProject": "../RCTechs.Extensions.Linq/RCTechs.Extensions.Linq.csproj"
@@ -295,25 +295,30 @@
     ".NETFramework,Version=v4.5": [
       "MSTest.TestAdapter >= 1.3.2",
       "MSTest.TestFramework >= 1.3.2",
-      "RCTechs.Extensions.Linq >= 0.0.5"
+      "RCTechs.Extensions.Linq >= 0.0.6"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\TomWuyts\\.nuget\\packages\\": {}
+    "C:\\Users\\tomwu\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\DevGitHub\\RCTechs.Extensions.Linq\\RCTechs.Extensions.Linq\\RCTechs.Extensions.Linq\\RCTechs.Extensions.Linq.Test\\RCTechs.Extensions.Linq.Test.csproj",
+      "projectUniqueName": "E:\\DevGitHub\\RCTechs.Extensions.Linq\\RCTechs.Extensions.Linq\\RCTechs.Extensions.Linq\\RCTechs.Extensions.Linq.Test\\RCTechs.Extensions.Linq.Test.csproj",
       "projectName": "RCTechs.Extensions.Linq.Test",
-      "projectPath": "D:\\DevGitHub\\RCTechs.Extensions.Linq\\RCTechs.Extensions.Linq\\RCTechs.Extensions.Linq\\RCTechs.Extensions.Linq.Test\\RCTechs.Extensions.Linq.Test.csproj",
-      "packagesPath": "C:\\Users\\TomWuyts\\.nuget\\packages\\",
-      "outputPath": "D:\\DevGitHub\\RCTechs.Extensions.Linq\\RCTechs.Extensions.Linq\\RCTechs.Extensions.Linq\\RCTechs.Extensions.Linq.Test\\obj\\",
+      "projectPath": "E:\\DevGitHub\\RCTechs.Extensions.Linq\\RCTechs.Extensions.Linq\\RCTechs.Extensions.Linq\\RCTechs.Extensions.Linq.Test\\RCTechs.Extensions.Linq.Test.csproj",
+      "packagesPath": "C:\\Users\\tomwu\\.nuget\\packages\\",
+      "outputPath": "E:\\DevGitHub\\RCTechs.Extensions.Linq\\RCTechs.Extensions.Linq\\RCTechs.Extensions.Linq\\RCTechs.Extensions.Linq.Test\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
+      "fallbackFolders": [
+        "C:\\Microsoft\\Xamarin\\NuGet\\"
+      ],
       "configFilePaths": [
-        "C:\\Users\\TomWuyts\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\tomwu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net45"
@@ -325,8 +330,8 @@
       "frameworks": {
         "net45": {
           "projectReferences": {
-            "D:\\DevGitHub\\RCTechs.Extensions.Linq\\RCTechs.Extensions.Linq\\RCTechs.Extensions.Linq\\RCTechs.Extensions.Linq\\RCTechs.Extensions.Linq.csproj": {
-              "projectPath": "D:\\DevGitHub\\RCTechs.Extensions.Linq\\RCTechs.Extensions.Linq\\RCTechs.Extensions.Linq\\RCTechs.Extensions.Linq\\RCTechs.Extensions.Linq.csproj"
+            "E:\\DevGitHub\\RCTechs.Extensions.Linq\\RCTechs.Extensions.Linq\\RCTechs.Extensions.Linq\\RCTechs.Extensions.Linq\\RCTechs.Extensions.Linq.csproj": {
+              "projectPath": "E:\\DevGitHub\\RCTechs.Extensions.Linq\\RCTechs.Extensions.Linq\\RCTechs.Extensions.Linq\\RCTechs.Extensions.Linq\\RCTechs.Extensions.Linq.csproj"
             }
           }
         }
